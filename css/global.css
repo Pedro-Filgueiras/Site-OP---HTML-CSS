@@ -1,0 +1,102 @@
+:root {
+    --cor--navegacao: #1c3051;
+    --cor--lista_navegacao: #fff;
+    --cor--main: #ffffff;
+    --cor--body: #ffffff;
+
+    --fonte--titulo: "Montserrat", sans-serif;
+    --fonte--forte: "Special Elite", system-ui;
+    --fonte--paragrafo: "Roboto", sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: var(--cor--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 3rem;
+}
+
+main {
+    width: 80%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: var(--cor--main);
+}
+
+main .secao-elementos {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+footer {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor--lista_navegacao);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+strong {
+    font-family: var(--fonte--forte);
+}
+
+em {
+    font-family: var(--fonte--forte);
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte--titulo);
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    text-indent: 1rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-family: var(--fonte--paragrafo);
+    font-size: 1rem;
+    font-weight: 400;
+}
+

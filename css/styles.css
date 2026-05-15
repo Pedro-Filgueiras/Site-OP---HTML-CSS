@@ -1,0 +1,255 @@
+    /* Barra de Navegação */
+
+    .navegacao {
+        background: var(--cor--navegacao);
+        height: 3rem; /* Do Header */
+        width: 100%;
+        padding: 0 5rem;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        
+    }
+
+    .espaco-logo {
+        height: 100%; /* Preenche toda a altura da barra de navegação */
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 100%; /* Preenche todo o espaço que foi reservado pelo 'espaco-logo' */
+    }
+
+    .lista-elementos {
+        height: 100%; /* Preenche toda a altura da barra de navegação */
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        color: var(--cor--lista_navegacao);
+    }
+
+    .lista-elementos a {
+        font-weight: 900;
+        font-size: 1.3rem;
+        padding: 5px 10px;
+        border-radius: 10px;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    #link-sangue:hover, #link-sangue:focus {color: #ff0000; background-color: #0c1d37;}
+    #link-morte:hover, #link-morte:focus {color: #000000; background-color: #0c1d37;}
+    #link-conhecimento:hover, #link-conhecimento:focus {color: rgb(227, 220, 14); background-color: #0c1d37;}
+    #link-energia:hover, #link-energia:focus {color: rgb(71, 162, 138); background-color: #0c1d37;}
+    #link-medo:hover, #link-medo:focus {color: rgba(181, 181, 181, 0.651); background-color: #0c1d37;}
+
+
+    /* Seção elementos */
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+
+    /* Cards + Monstros*/
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    .card {
+        border: 1px solid;
+        width: 30%;
+        height: 30vh;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icone-tipo {
+        width: 50%; /* de tamanho do 'card'*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    strong {
+        width: 50%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .espaco-monstro {
+        width: 40%;
+        padding: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 20px;
+    }
+
+    #card-sangue {background-color: rgb(152, 0, 0); color: rgb(205, 205, 205);}
+    #card-morte {background-color: rgb(63, 63, 63); color: rgb(205, 205, 205);}
+    #card-conhecimento {background-color: rgb(227, 220, 14); color: #000000;}
+    #card-energia {background-color: rgb(71, 162, 138); color: #000000;}
+    #card-medo {background-color: rgba(181, 181, 181, 0.651); color: #000000;}
+
+    #monstro-sangue {background-color: rgb(152, 0, 0); color: rgb(255, 255, 255);}
+    #monstro-morte {background-color: rgb(63, 63, 63); color: rgb(255, 255, 255);}
+    #monstro-conhecimento {background-color: rgb(227, 220, 14); color: #000000;}
+    #monstro-energia {background-color: rgb(71, 162, 138); color: #000000;}
+    #monstro-medo {background-color: rgba(181, 181, 181, 0.651); color: #000000;}
+
+    /* Formulário */
+    .secao-formulario {
+        margin-top: 4rem;
+        width: 50%;
+        height: auto;
+        border: 4px solid rgb(73, 73, 73);
+        box-shadow: 2px 2px 5px;
+        border-radius: 10px;
+        background-color: #929090;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 1rem;
+    }
+
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: .4rem;
+    }
+
+    .mais-detalhes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+
+    .mais-detalhes .caixa-visual {
+        width: 40%;
+        display: flex;
+        gap: 1rem;  
+    }
+
+    .mais-detalhes .visibilidade-nevoa {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    ::placeholder {
+        color: rgb(82, 82, 82);
+    }
+
+    legend {
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    form p {
+        font-size: .9rem;
+        font-weight: 400;
+        text-indent: 0;
+        margin-bottom: .2rem;
+    }
+
+    label {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    input[type='text'], input[type='tel'], input[type='datetime-local'] ,textarea{
+        background-color: rgb(187, 255, 232);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    input[type='text']:hover, input[type='tel']:hover, input[type='datetime-local']:hover, input[type='radio']:hover, select:hover,textarea:hover{
+        background-color: rgb(3, 108, 188);
+
+    }
+
+    select{
+        height: 2rem;
+        font-size: .9rem;
+        background-color: rgb(187, 255, 232);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    input[type='radio']{
+        accent-color: rgb(187, 255, 232);
+        cursor: pointer;
+    }
+
+    form button {
+        height: 50px;
+        width: 180px;
+        padding: 0 20px;
+        background-color: rgb(187, 255, 232);
+        align-self: center;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    form button:hover {
+        background-color: rgb(2, 76, 133);
+    }
+
+    /* Footer Da Página */
+    footer.final{
+        background-color: rgb(135, 134, 134);
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 18vh;
+        padding: 0 5rem;
+        gap: 7rem;
+    }
+
+    .redes-sociais {
+        display: flex;
+        gap: 4rem;
+        width: 30%;
+    }
+
+    .redes-sociais figure {
+        height: 25;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+    }
